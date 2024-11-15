@@ -23,13 +23,13 @@
 
 .video-caption-rightbottom {
     position: absolute;
-    bottom: 200px;
-    right: 80px;
+    bottom: 15%;
+    right: 2%;
     color: white;
     /* background-color: rgba(0, 0, 0, 0.5); */
     padding: 10px;
-    font-size: 15px;
-    max-width: 520px;
+    font-size: 0.8rem;
+    max-width: 20%;
     line-height: 1.4;
     text-align: justify;
 }
@@ -56,8 +56,8 @@
 }
 
 .video-middle-icon {
-    margin-right: 2%;
-    width: 8%;
+    margin-right: 5px;
+    width: 5%;
 }
 
 .video-middle-text {
@@ -83,30 +83,37 @@
     justify-content: center;
 }
 
+.huggingface-span {
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    /* 垂直居中对齐 */
+    justify-content: center;
+    vertical-align: middle;
+    /* 确保与周围文字对齐 */
+}
+
 .huggingface-span a {
     display: inline-flex;
-    /* 保持行内显示 */
     align-items: center;
-    /* 垂直居中对齐图标和文字 */
     text-decoration: none;
     border: 2px solid black;
     border-radius: 20px;
-    padding: 0px 8px;
+    padding: 0 8px;
     line-height: 1.5;
-    /* 保证链接和文字对齐 */
-}
-
-.huggingface-icon {
-    width: 24px;
-    height: auto;
-    margin-right: 8px;
-    /* 图标和文字之间的间距 */
+    vertical-align: middle;
+    /* 与文字对齐 */
 }
 
 .huggingface-text {
     color: white;
     font-size: 15px;
+    display: inline-block;
+    /* 保持文字块状，避免引起布局问题 */
+    vertical-align: middle;
+    margin-right: 15px;
 }
+
 .huggingface-text:hover {
     color: wheat;
 }
